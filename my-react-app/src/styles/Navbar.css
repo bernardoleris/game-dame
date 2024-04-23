@@ -1,3 +1,62 @@
-h1{
-    color: red;
+html, body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100%;
 }
+
+.header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color:#FBF6F0;
+    border: 1px solid #4B626C;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bar{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-avatar{
+    width: auto;
+    height: 100px;
+    padding-left: 40px;
+}
+
+.navbar-texto{
+    font-family: Montserrat, sans-serif;
+    font-size: 32px;
+    text-decoration: none;
+    color: #4B626C;
+    
+}
+
+.barra-vertical{
+    width: 40px;
+    height: 0px;
+    border: 1px solid #4B626C;
+    transform: rotate(-90deg);
+}
+
+/* Rectangle 5 */
+
+.pesquisa{
+    display: flex;
+    width: 165px;
+    height: 40px;
+    background: rgba(151, 164, 162, 0.45);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding-right: 40px;
+    margin-right: 40px;
+}
+
+.icone-pesquisa{
+    width: 30%;
+}
+
