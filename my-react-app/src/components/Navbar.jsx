@@ -1,6 +1,6 @@
 import React from "react";
 import '../styles/Navbar.css';
-import avatarImage from '../assets/navbar-avatar.png'; // Importe a imagem
+import avatarImage from '../assets/navbar-avatar.png'; 
 
 function Navbar(){
     return (
@@ -17,7 +17,7 @@ function Navbar(){
                 <div className="barra-vertical"></div>
                 <a href="" className="navbar-texto">Conta</a>
             </div>
-            <div className="pesquisa"></div>
+            <input type="text" className="pesquisa"/>
         </div>
     )
 }
