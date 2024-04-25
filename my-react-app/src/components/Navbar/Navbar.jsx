@@ -1,6 +1,8 @@
 import React from "react";
-import '../styles/Navbar.css';
-import avatarImage from '../assets/navbar-avatar.png'; 
+import './Navbar.css';
+import '../../styles/Index.css';
+import avatarImage from '../../assets/navbar-avatar.png'; 
+import { FaRegTrashAlt} from "react-icons/fa";
 
 function Navbar(){
     return (

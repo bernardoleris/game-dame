@@ -1,0 +1,36 @@
+.perfil-jogos{
+    width: 70%;
+    height: 100%;
+    background-color: #4B626C;
+}
+
+.perfil-jogos{
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jogos{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+ 
+}
+
+.jogos-texto{
+    display: flex;
+    justify-content: left;
+    color: #FBF6F0; 
+    font-size: 32px;
+}
+
+.jogos-img{
+    display: grid;
+    grid-template-columns: repeat(2, auto); /* 2 colunas de tamanho automático */
+    grid-template-rows: repeat(2, auto); /* 2 linhas de tamanho automático */
+    column-gap: 70px;
+    row-gap: 40px;
+    justify-content: center;
+}

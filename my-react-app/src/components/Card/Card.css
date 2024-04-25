@@ -1,0 +1,17 @@
+.card-img{
+    width: 150px; 
+    aspect-ratio: 190 / 250; 
+}
+
+.card-note{
+    display: flex;
+    justify-content: center;
+    color: #FBF6F0; 
+    font-size: 15px;
+
+}
+
+.card{
+    width: 150px;
+}
+

@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/Perfil.css';
+import './Perfil.css';
 import { RiPencilFill } from "react-icons/ri";
 import { FaRegTrashAlt} from "react-icons/fa";
 
