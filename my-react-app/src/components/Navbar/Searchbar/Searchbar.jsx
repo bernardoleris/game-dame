@@ -5,7 +5,7 @@ import "./Searchbar.css";
 function Searchbar(){
     return(
         <div className="input-wrapper">
-            <input/>
+            <input />
             <FaSearch id="search-icon"/>
         </div>
     );

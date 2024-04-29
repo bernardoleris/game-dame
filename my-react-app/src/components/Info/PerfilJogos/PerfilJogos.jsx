@@ -1,7 +1,8 @@
 import React from "react";
-import Card from "../Card/Card";
+import Card from "./Card/Card";
 import './PerfilJogos.css';
 import { CiShoppingCart } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 //Aprenda a usar styled components
 // divida em pastas, ex: EdicaoDados -> EdicaoDados.jsx/ EdicaoDados.js
@@ -30,6 +31,7 @@ function PerfilJogos(){
                         />
                     </div>
                 </div>
+                <Link to='/shoppingcart'><CiShoppingCart id="shopping-cart"/></Link>
             </div>
     )
 }

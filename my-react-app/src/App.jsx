@@ -1,14 +1,14 @@
-import { useState } from 'react'
 import React from "react";
-import Navbar from './components/Navbar/Navbar.jsx';
 import Info from './components/Info/Info.jsx';
+import ShoppingCart from "./components/ShoppingCart/ShoppingCart.jsx";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className='app'>
-        <Navbar />
-        <Info />
-    </div>
+    <Routes>
+      <Route path='/' element={<Info />}></Route> 
+      <Route path='/shoppingcart' element={<ShoppingCart />}></Route> 
+    </Routes>
   )
 }
 

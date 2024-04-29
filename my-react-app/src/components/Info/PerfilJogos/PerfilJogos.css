@@ -2,9 +2,6 @@
     width: 70%;
     height: 100%;
     background-color: #4B626C;
-}
-
-.perfil-jogos{
     font-family: Montserrat, sans-serif;
     font-style: normal;
     display: flex;
@@ -28,9 +25,19 @@
 
 .jogos-img{
     display: grid;
-    grid-template-columns: repeat(2, auto); /* 2 colunas de tamanho automático */
-    grid-template-rows: repeat(2, auto); /* 2 linhas de tamanho automático */
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
     column-gap: 70px;
     row-gap: 40px;
     justify-content: center;
 }
+
+#shopping-cart{
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    color: white;
+    font-size: 41px;
+}
+
+
