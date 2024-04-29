@@ -26,18 +26,5 @@
     transform: rotate(-90deg);
 }
 
-.pesquisa{
-    font-family: Montserrat, sans-serif;
-    font-size: 16px;
-    display: flex;
-    width: 200px;
-    height: 40px;
-    background: rgba(151, 164, 162, 0.45);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-    margin-right: 40px;
-    border: 0;
-    color: #4B626C;
-}
 
 

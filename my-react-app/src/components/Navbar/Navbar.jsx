@@ -2,7 +2,7 @@ import React from "react";
 import './Navbar.css';
 import '../../styles/Index.css';
 import avatarImage from '../../assets/navbar-avatar.png'; 
-import { FaRegTrashAlt} from "react-icons/fa";
+import Searchbar from "./Searchbar/Searchbar";
 
 function Navbar(){
     return (
@@ -19,7 +19,7 @@ function Navbar(){
                 <div className="barra-vertical"></div>
                 <a href="" className="navbar-texto">Conta</a>
             </div>
-            <input type="text" className="pesquisa"/>
+            <Searchbar />
         </div>
     )
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "../Card/Card";
 import './PerfilJogos.css';
+import { CiShoppingCart } from "react-icons/ci";
 
 //Aprenda a usar styled components
 // divida em pastas, ex: EdicaoDados -> EdicaoDados.jsx/ EdicaoDados.js
