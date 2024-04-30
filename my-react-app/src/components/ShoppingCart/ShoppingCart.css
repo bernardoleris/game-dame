@@ -1,0 +1,6 @@
+.shopping{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: calc(100vh - 101px);
+}

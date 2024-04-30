@@ -1,0 +1,36 @@
+.cart-container{
+    display: flex;
+    justify-content: center;
+}
+.cart-games{
+    display: grid;
+    grid-template-columns: repeat(2, auto); /* Duas colunas */
+    gap: 20px; /* Espaçamento entre as colunas */
+    color: white;
+    width: 60%;
+}
+
+.cart-img{
+    width: 190px;
+    height: 250px;
+}
+
+.cart-title{
+    font-size: 20px;
+}
+
+.cart-platform{
+    font-size: 16px;
+}
+
+.cart-price{
+    font-size: 32px;
+}
+
+.cart-games > :nth-child(-n+3) {
+    grid-column: 1;
+  }
+  
+.cart-games > :nth-child(4) {
+    grid-column: 2;
+}

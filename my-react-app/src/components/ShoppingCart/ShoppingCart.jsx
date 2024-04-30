@@ -1,13 +1,16 @@
 import React from "react";
-import '../Info/Info.css';
+import './ShoppingCart.css';
 import Navbar from "../Navbar/Navbar";
+import Cart from './Cart/Cart.jsx';
+import Payment from './Payment/Payment.jsx';
 
 function ShoppingCart(){
     return (
-        <div className="ShoppingCart">
+        <div>
             <Navbar />
-            <div>
-                
+            <div className="shopping">
+                <Cart />
+                <Payment />
             </div>
         </div>
     )
