@@ -1,36 +1,39 @@
-.cart-container{
+.cart-flexbox{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    height: 197.37px;
 }
-.cart-games{
-    display: grid;
-    grid-template-columns: repeat(2, auto); /* Duas colunas */
-    gap: 20px; /* Espaçamento entre as colunas */
+
+.cart-gamestexts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     color: white;
-    width: 60%;
+    height: 100%;
+    padding: 0;
 }
 
 .cart-img{
-    width: 190px;
-    height: 250px;
+    display: flex;
+    width: 150px; 
+    aspect-ratio: 190 / 250; 
 }
 
 .cart-title{
-    font-size: 20px;
+    font-size: 16px;
+    width: 200px;
 }
 
 .cart-platform{
-    font-size: 16px;
+    font-size: 12px;
+    width: 120px;
+    margin-bottom: auto;
 }
 
 .cart-price{
-    font-size: 32px;
-}
-
-.cart-games > :nth-child(-n+3) {
-    grid-column: 1;
-  }
-  
-.cart-games > :nth-child(4) {
-    grid-column: 2;
+    display: flex;
+    align-items: end;
+    font-size: 24px;
+    width: 162px;
+    font-weight: 600;
 }

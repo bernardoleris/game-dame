@@ -3,6 +3,7 @@ import './Navbar.css';
 import '../../styles/Index.css';
 import avatarImage from '../../assets/navbar-avatar.png'; 
 import Searchbar from "./Searchbar/Searchbar";
+import { Link } from 'react-router-dom';
 
 function Navbar(){
     return (
@@ -17,7 +18,7 @@ function Navbar(){
                 <div className="barra-vertical"></div>
                 <a href="" className="navbar-texto">Promoções</a>
                 <div className="barra-vertical"></div>
-                <a href="" className="navbar-texto">Conta</a>
+                <Link to="/" className="navbar-texto">Conta</Link>
             </div>
             <Searchbar />
         </div>

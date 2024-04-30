@@ -14,6 +14,17 @@ function Cart(){
                     platform="PC"
                     price="R$ 299,00"
                 />
+                <CartGames
+                    img="https://image.api.playstation.com/vulcan/img/rnd/202009/2921/rS7dirQTbNRco8GdBQdeLV2d.png"
+                    title="Death Stranding"
+                    platform="PC"
+                    price="R$ 299,00"
+                />
+                <div className="line"></div> {/* Div para a linha */}
+                <div className="total-price">
+                    <div>R$ 598,00</div>
+                    <div>Total</div>
+                </div>
             </div>
         </div>
     )
