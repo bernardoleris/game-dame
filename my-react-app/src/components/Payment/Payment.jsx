@@ -6,16 +6,12 @@ import pix from '../../assets/pix-image.png'
 function Payment(){
     return (
             <div className="payment">
-                <div className="payment-text">
-                    <div className="payment-texto">Método de Pagamento</div>
-                </div>
-                <div className="payment2">
-                    <div className="payment-container">
-                        <div className="pix">
-                            <img src={pix} alt="Pix Image" className="pix-image"/>
-                            <div className="pix-texto">Pix</div>
-                            <button class="check-button" onclick="toggleChecked(this)"></button>
-                        </div>
+                <div className="payment-texto">Método de Pagamento</div>
+                <div className="payment-all">
+                    <div className="pix">
+                        <img src={pix} alt="Pix Image" className="pix-image"/>
+                        <div className="pix-texto">Pix</div>
+                        <button class="check-button" onclick="toggleChecked(this)"></button>
                     </div>
                     <div className="pix-line"></div>
                     <div className="termos">
