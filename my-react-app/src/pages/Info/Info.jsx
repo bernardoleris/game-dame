@@ -1,8 +1,8 @@
 import React from "react";
 import './Info.css';
-import Perfil from './Perfil/Perfil.jsx';
-import PerfilJogos from './PerfilJogos/PerfilJogos.jsx';
-import Navbar from "../Navbar/Navbar.jsx";
+import Perfil from '../../components/Perfil/Perfil.jsx';
+import PerfilJogos from '../../components/PerfilJogos/PerfilJogos.jsx';
+import Navbar from "../../components/Navbar/Navbar.jsx";
 
 function Info(){
     return (

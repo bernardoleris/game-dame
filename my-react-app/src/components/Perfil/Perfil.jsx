@@ -12,7 +12,8 @@ function Perfil(){
                 <p className="perfil-escrito">Seu CPF é 123.456.789-00 </p>
                 <a href="" className="perfil-botao">Alterar Dados <span className="perfil-icon"><RiPencilFill /></span></a>
                 <a href="" className="perfil-botao">Excluir Conta <span className="perfil-icon"><FaRegTrashAlt /></span></a>
-                <a href="" className="perfil-botao">Tela do admin</a>
+                {/*a seria um component chamado buttonReact e por props ele receberia os atributos q variam*/}
+                <a href="" className="perfil-botao">Tela do admin</a>\
             </div>
         </div>
     )

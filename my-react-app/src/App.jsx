@@ -1,6 +1,6 @@
 import React from "react";
-import Info from './components/Info/Info.jsx';
-import ShoppingCart from "./components/ShoppingCart/ShoppingCart.jsx";
+import Info from './pages/Info/Info.jsx';
+import ShoppingCart from "./pages/ShoppingCart/ShoppingCart.jsx";
 import { Routes, Route } from "react-router-dom";
 
 function App() {

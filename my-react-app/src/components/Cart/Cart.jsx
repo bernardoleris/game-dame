@@ -5,7 +5,7 @@ import CartGames from './CartGames/CartGames.jsx'
 function Cart(){
     return (
         <div className="cart">
-            <p className="cart-texto">Carrinho de Compras</p>
+            <div className="cart-texto">Carrinho de Compras</div>
             <div className="cart-container">
                 <CartGames
                     img="https://image.api.playstation.com/vulcan/ap/rnd/202007/3122/W5DMW31LjfCHMdHUzbzXqA3H.jpg"
@@ -20,7 +20,7 @@ function Cart(){
                     platform="PC"
                     price="R$ 299,00"
                 />
-                <div className="line"></div> {/* Div para a linha */}
+                <div className="line"></div>
                 <div className="total-price">
                     <div>R$ 598,00</div>
                     <div>Total</div>

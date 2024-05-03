@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./Card/Card";
+import Card from "../Card/Card";
 import './PerfilJogos.css';
 import { CiShoppingCart } from "react-icons/ci";
 import { Link } from "react-router-dom";
@@ -13,6 +13,9 @@ function PerfilJogos(){
                 <div className="jogos">
                     <p className="jogos-texto">Jogos adquiridos:</p>
                     <div className="jogos-img">
+                        {/* card pode ser um component generico (shared)
+                        a prop note pode virar uma prop chamada label.
+                        dessa forma, vc pode reutilizar o component de maneira mais facil */}
                         <Card
                             img="https://image.api.playstation.com/vulcan/ap/rnd/202007/3122/W5DMW31LjfCHMdHUzbzXqA3H.jpg"
                             note="100/100"

@@ -1,8 +1,8 @@
 import React from "react";
 import './ShoppingCart.css';
-import Navbar from "../Navbar/Navbar";
-import Cart from './Cart/Cart.jsx';
-import Payment from './Payment/Payment.jsx';
+import Navbar from "../../components/Navbar/Navbar.jsx";
+import Cart from '../../components/Cart/Cart.jsx';
+import Payment from '../../components/Payment/Payment.jsx';
 
 function ShoppingCart(){
     return (
