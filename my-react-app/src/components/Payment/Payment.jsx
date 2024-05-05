@@ -11,11 +11,11 @@ function Payment(){
                     <div className="pix">
                         <img src={pix} alt="Pix Image" className="pix-image"/>
                         <div className="pix-texto">Pix</div>
-                        <button class="check-button" onclick="toggleChecked(this)"></button>
+                        <button className="check-button" onClick={() => toggleChecked(this)}></button>
                     </div>
                     <div className="pix-line"></div>
                     <div className="termos">
-                        <button class="check-button" onclick="toggleChecked(this)"></button>
+                        <button className="check-button" onClick={() => toggleChecked(this)}></button>
                         <div className="termo-texto">Eu aceito os termos e condições</div>
                     </div>
                     <a href="" className="payment-botao">Finalizar Compra <span className="payment-icon"><FaShoppingCart /></span></a>

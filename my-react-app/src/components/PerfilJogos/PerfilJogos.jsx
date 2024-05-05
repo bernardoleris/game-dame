@@ -32,7 +32,7 @@ function PerfilJogos(){
                             img="https://image.api.playstation.com/vulcan/img/rnd/202009/2921/rS7dirQTbNRco8GdBQdeLV2d.png"
                             note="Adicionar avaliação"
                         />
-                    </div>
+                    </div>  
                 </div>
                 <Link to='/shoppingcart'><CiShoppingCart id="shopping-cart"/></Link>
             </div>

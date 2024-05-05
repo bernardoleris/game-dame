@@ -1,6 +1,7 @@
 import React from "react";
 import Info from './pages/Info/Info.jsx';
 import ShoppingCart from "./pages/ShoppingCart/ShoppingCart.jsx";
+import NoMatch from "./pages/NoMatch.jsx"
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Info />}></Route> 
       <Route path='/shoppingcart' element={<ShoppingCart />}></Route> 
+      <Route path="*" element={<NoMatch />}></Route> 
     </Routes>
   )
 }

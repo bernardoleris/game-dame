@@ -26,5 +26,7 @@
     transform: rotate(-90deg);
 }
 
-
+.active {
+    font-weight: bold; 
+}
 
