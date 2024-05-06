@@ -1,0 +1,23 @@
+.register-page{
+    background-color: #FBF8F4;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.form-page{
+    background-color: aqua;
+    width: 550px;
+    height: 100vh;
+}
+
+.register-img{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+}
+
+.imagem{
+    width: 100vh;
+    height: auto;
+}
