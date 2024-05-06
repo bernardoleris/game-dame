@@ -48,11 +48,11 @@
 }
 
 .check-button {
-    width: 20px; /* Largura do botão */
-    height: 20px; /* Altura do botão */
-    border-radius: 50%; /* Transforma o botão em um círculo */
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%; 
     background-color: #A097A4;
-    cursor: pointer; /* Mostra o cursor de mão ao passar o mouse */
+    cursor: pointer; 
     border: none;
   }
 
@@ -61,8 +61,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    border-bottom: 2px solid #4B626C; /* Adiciona uma borda inferior */
-    width: 402px;
+    border-bottom: 2px solid #4B626C; 
     margin-top: 50px;
 }
 
@@ -74,23 +73,4 @@
     gap: 10px;
 }
 
-.payment-botao{
-    display: flex;
-    justify-content: center;
-    width: 210px;
-    height: 45px;
-    background: #4B626C;
-    border-radius: 10px;
-    color: #FBF6F0;
-    align-items: center;
-    font-size: 20px;
-    text-decoration: none;
-    margin-top: 60px;
-}
 
-.payment-icon{
-    margin-top: 1px;
-    margin-left: 3px;
-    width: 20px;
-    height: 20px;
-}

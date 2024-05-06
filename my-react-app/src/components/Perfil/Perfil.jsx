@@ -1,7 +1,8 @@
 import React from "react";
 import './Perfil.css';
 import { RiPencilFill } from "react-icons/ri";
-import { FaRegTrashAlt} from "react-icons/fa";
+import { FaRegTrashAlt } from "react-icons/fa";
+import Button from "../Button.jsx";
 
 function Perfil(){
     return (
@@ -10,10 +11,9 @@ function Perfil(){
                 <h1 className="perfil-titulo">Olá, Nome do Usuário</h1>
                 <p className="perfil-escrito">Seu email é nomeusuario@gmail.com</p>
                 <p className="perfil-escrito">Seu CPF é 123.456.789-00 </p>
-                <a href="" className="perfil-botao">Alterar Dados <span className="perfil-icon"><RiPencilFill /></span></a>
-                <a href="" className="perfil-botao">Excluir Conta <span className="perfil-icon"><FaRegTrashAlt /></span></a>
-                {/*a seria um component chamado buttonReact e por props ele receberia os atributos q variam*/}
-                <a href="" className="perfil-botao">Tela do admin</a>\
+                <Button text="Alterar Dados" icon={<RiPencilFill />} />
+                <Button text="Excluir Conta" icon={<FaRegTrashAlt />} />
+                <Button text="Tela do admin" />
             </div>
         </div>
     )

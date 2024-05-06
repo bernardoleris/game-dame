@@ -2,6 +2,7 @@ import React from "react";
 import './Payment.css'
 import { FaShoppingCart } from "react-icons/fa";
 import pix from '../../assets/pix-image.png'
+import Button from '../Button.jsx'
 
 function Payment(){
     return (
@@ -18,7 +19,7 @@ function Payment(){
                         <button className="check-button" onClick={() => toggleChecked(this)}></button>
                         <div className="termo-texto">Eu aceito os termos e condições</div>
                     </div>
-                    <a href="" className="payment-botao">Finalizar Compra <span className="payment-icon"><FaShoppingCart /></span></a>
+                    <Button text="Finalizar Compra" icon={<FaShoppingCart />} payment='payment'/>
                 </div>
             </div>
     )

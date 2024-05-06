@@ -4,9 +4,8 @@ import './PerfilJogos.css';
 import { CiShoppingCart } from "react-icons/ci";
 import { Link } from "react-router-dom";
 
-//Aprenda a usar styled components
-// divida em pastas, ex: EdicaoDados -> EdicaoDados.jsx/ EdicaoDados.js
 // Aprender Controladores de states globais: redux ou Jotai(prefiro o jotai)
+
 function PerfilJogos(){
     return (
             <div className="perfil-jogos">
