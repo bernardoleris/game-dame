@@ -18,7 +18,7 @@ function Navbar(){
                 <div className="barra-vertical"></div>
                 <a href="" className="navbar-texto">Promoções</a>
                 <div className="barra-vertical"></div>
-                <NavLink to="/" className="navbar-texto" activeclassname="active">Conta</NavLink>
+                <NavLink to="/info" className="navbar-texto" activeclassname="active">Conta</NavLink>
             </div>
             <Searchbar />
         </div>
