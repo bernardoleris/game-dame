@@ -10,15 +10,15 @@ function Navbar(){
         <div className="header">
             <img src={avatarImage} alt="Avatar" className="navbar-avatar"/>
             <div className="bar">
-                <a href="" className="navbar-texto">Lançamentos</a>
+                <NavLink to="*" className={({isActive}) => (isActive ? "navbar-texto active-style" : 'navbar-texto')}>Lançamentos</NavLink>
                 <div className="barra-vertical"></div>
-                <a href="" className="navbar-texto">Populares</a>
+                <NavLink to="*" className={({isActive}) => (isActive ? "navbar-texto active-style" : 'navbar-texto')}>Populares</NavLink>
                 <div className="barra-vertical"></div>
-                <a href="" className="navbar-texto">Gêneros</a>
+                <NavLink to="*" className={({isActive}) => (isActive ? "navbar-texto active-style" : 'navbar-texto')}>Gêneros</NavLink>
                 <div className="barra-vertical"></div>
-                <a href="" className="navbar-texto">Promoções</a>
+                <NavLink to="*" className={({isActive}) => (isActive ? "navbar-texto active-style" : 'navbar-texto')}>Promoções</NavLink>
                 <div className="barra-vertical"></div>
-                <NavLink to="/info" className="navbar-texto" activeclassname="active">Conta</NavLink>
+                <NavLink to="/info" className= {({isActive}) => (isActive ? "navbar-texto active-style" : 'navbar-texto')}>Conta</NavLink>
             </div>
             <Searchbar />
         </div>

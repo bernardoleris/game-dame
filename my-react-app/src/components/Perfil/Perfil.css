@@ -26,6 +26,7 @@
 .perfil-escrito{
     width: 100%;
     height: 39px;
+    font-weight: 400;
     font-size: 32px;
     line-height: 39px;
     color: #4B626C;
@@ -36,6 +37,7 @@
     justify-content: center;
     width: 270px;
     height: 45px;
+    font-weight: 400;
     background: #4B626C;
     border-radius: 10px;
     color: #FBF6F0;

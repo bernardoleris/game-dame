@@ -24,7 +24,7 @@ function Register(){
                         </div>
                     </div>
                 <div className='acess-container'>
-                    <Link to='/' className='acess-texto'>Fazer Login</Link>
+                    <div><Link to='/' className='acess-texto'>Fazer Login</Link></div>
                 </div>
                 </div>
             </div>

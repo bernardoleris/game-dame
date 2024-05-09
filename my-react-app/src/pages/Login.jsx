@@ -21,8 +21,8 @@ function Login(){
                         </div>
                     </div>
                     <div className='acess-container'>
-                        <Link to='/register' className='acess-texto'>Criar conta</Link>
-                        <Link to='/forgotpassword' className='acess-texto'>Esqueceu a Senha</Link>
+                        <div><Link to='/register' className='acess-texto'>Criar conta</Link></div>
+                        <div><Link to='/forgotpassword' className='acess-texto'>Esqueceu a Senha</Link></div>
                     </div>
                 </div>
             </div>

@@ -19,7 +19,7 @@ function Payment(){
                         <button className="check-button" onClick={() => toggleChecked(this)}></button>
                         <div className="termo-texto">Eu aceito os termos e condições</div>
                     </div>
-                    <Button text="Finalizar Compra" icon={<FaShoppingCart />} payment='payment'/>
+                    <Button text="Finalizar Compra" icon={<FaShoppingCart />} variant='payment'/>
                 </div>
             </div>
     )
