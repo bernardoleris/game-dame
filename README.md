@@ -1,1 +1,1 @@
-The game purchasing website called Game Dame features pages for registration, login, password recovery, shopping cart, and account informations. It's developed using React.js, HTML, CSS and Styled Components.
+The game purchasing website called Game Dame features pages for registration, login, password recovery, shopping cart, and account informations. It's developed using React.js, MUI, HTML, CSS and Styled Components.
