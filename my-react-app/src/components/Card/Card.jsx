@@ -5,7 +5,7 @@ function Card(props){
     return (
             <div className="card">
                 <img src={props.img} alt="" className="card-img"/>
-                <div className="card-note">{props.note}</div>
+                <input className="card-note" name={props.nome} placeholder={props.inicial} />
             </div>
     )
 }

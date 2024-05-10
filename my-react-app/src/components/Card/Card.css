@@ -3,14 +3,25 @@
     aspect-ratio: 190 / 250; 
 }
 
-.card-note{
+input.card-note{
     display: flex;
     justify-content: center;
+    text-align: center;
     color: #FBF6F0; 
     font-size: 15px;
+    height: auto;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    margin-left: 0;
+    font-weight: 400;
 }
 
 .card{
     width: 150px;
 }
+
+input.card-note::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+  }
 

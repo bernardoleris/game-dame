@@ -8,8 +8,8 @@ function Perfil(){
     return (
         <div className="perfil">
             <div className="perfil-texto">
-                <h1 className="perfil-titulo">Olá, Nome do Usuário</h1>
-                <p className="perfil-escrito">Seu email é nomeusuario@gmail.com</p>
+                <h1 className="perfil-titulo">Olá, &lt;&lt;Nome do Usuário&gt;&gt;</h1>
+                <p className="perfil-escrito">Seu email é nomeusuario@email.com</p>
                 <p className="perfil-escrito">Seu CPF é 123.456.789-00 </p>
                 <Button text="Alterar Dados" icon={<RiPencilFill />} />
                 <Button text="Excluir Conta" icon={<FaRegTrashAlt />} />
