@@ -3,6 +3,7 @@ import './Payment.css'
 import { FaShoppingCart } from "react-icons/fa";
 import pix from '../../assets/pix-image.png'
 import Button from '../Button.jsx'
+import Comcheckbox from "../Checkbox.jsx";
 
 function Payment(){
     return (
@@ -12,11 +13,11 @@ function Payment(){
                     <div className="pix">
                         <img src={pix} alt="Pix Image" className="pix-image"/>
                         <div className="pix-texto">Pix</div>
-                        <button className="check-button" onClick={() => toggleChecked(this)}></button>
+                        <Comcheckbox />
                     </div>
                     <div className="pix-line"></div>
                     <div className="termos">
-                        <button className="check-button" onClick={() => toggleChecked(this)}></button>
+                        <Comcheckbox />
                         <div className="termo-texto">Eu aceito os termos e condições</div>
                     </div>
                     <Button text="Finalizar Compra" icon={<FaShoppingCart />} variant='payment'/>

@@ -47,15 +47,6 @@
     font-weight: 500;
 }
 
-.check-button {
-    width: 20px; 
-    height: 20px; 
-    border-radius: 50%; 
-    background-color: #A097A4;
-    cursor: pointer; 
-    border: none;
-  }
-
 .pix-line {
     display: flex;
     align-items: center;
