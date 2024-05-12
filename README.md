@@ -1,1 +1,1 @@
-This is a front-end project for game purchasing website called Game Dame features pages for registration, login, password recovery, shopping cart, and account informations. It's developed using React.js, MUI, HTML, CSS and Styled Components.
+This is a front-end project for game purchasing website called Game Dame features pages for registration, login, password recovery, shopping cart, and account informations. It's developed using React.js, MUI, HTML, CSS, Jotai and Styled Components.
