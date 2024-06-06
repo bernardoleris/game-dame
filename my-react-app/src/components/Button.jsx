@@ -19,6 +19,11 @@ const StyledButton = styled.button`
     cursor: pointer;
     gap: 10px;
     margin-top: ${props => props.variant === 'payment' ? '60px' : '0px'};
+    transition: transform 0.3s ease; /* Adiciona a transição suave */
+    
+    &:hover {
+        transform: scale(1.1); /* Aumenta o tamanho do botão em 10% */
+    }
 `;
 
 const StyledIcon = styled.span`

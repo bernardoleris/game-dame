@@ -38,6 +38,11 @@
     right: 20px; 
     color: white;
     font-size: 41px;
+    transition: transform 0.3s ease; /* Adiciona a transição suave */
+}
+
+#shopping-cart:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do ícone em 10% */
 }
 
 
