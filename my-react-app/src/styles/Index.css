@@ -15,3 +15,11 @@ html, body{
     justify-content: space-between;
     align-items: center;
 }
+
+a:has(button) {
+    text-decoration: none;
+}
+
+a:has(button):hover {
+    text-decoration: none;
+}

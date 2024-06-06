@@ -1,0 +1,47 @@
+.telas-admin{
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 101px);
+    width: 100%;
+}
+
+.box-admin{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: #4B626C;
+    width: calc(100vh);
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.box-admin:nth-child(2) {
+    background-color: #FFFFFF;
+}
+
+.admin-titulo{
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    color: #FBF6F0;
+}
+
+.box-admin:nth-child(2) .admin-titulo {
+    color:#4B626C;
+}
+
+.size-box{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    height: 550px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    
+}
+
+

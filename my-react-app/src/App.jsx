@@ -5,8 +5,9 @@ import Login from './pages/Login.jsx'
 import ShoppingCart from "./pages/ShoppingCart/ShoppingCart.jsx";
 import NoMatch from "./pages/NoMatch.jsx"
 import ForgotPassword from './pages/ForgotPassword.jsx'
-import { Routes, Route } from "react-router-dom";
 import UnderDevelopment from "./pages/UnderDevelopment.jsx";
+import Admin from "./pages/Admin/Admin.jsx"
+import { Routes, Route } from "react-router-dom";
 import { Provider } from 'jotai';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path='/shoppingcart' element={<ShoppingCart />}></Route> 
         <Route path='/forgotpassword' element={<ForgotPassword />}></Route> 
         <Route path='/underdevelopment' element={<UnderDevelopment />}></Route> 
+        <Route path='/admin' element={<Admin />}></Route> 
         <Route path="*" element={<NoMatch />}></Route> 
       </Routes>
     </Provider>

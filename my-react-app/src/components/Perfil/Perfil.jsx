@@ -3,6 +3,7 @@ import './Perfil.css';
 import { RiPencilFill } from "react-icons/ri";
 import { FaRegTrashAlt } from "react-icons/fa";
 import Button from "../Button.jsx";
+import { Link } from "react-router-dom";
 
 function Perfil(){
     return (
@@ -13,7 +14,9 @@ function Perfil(){
                 <p className="perfil-escrito">Seu CPF é 123.456.789-00 </p>
                 <Button text="Alterar Dados" icon={<RiPencilFill />} />
                 <Button text="Excluir Conta" icon={<FaRegTrashAlt />} />
-                <Button text="Tela do admin" />
+                <Link to="/admin">
+                    <Button text="Tela do admin" />
+                </Link>
             </div>
         </div>
     )
