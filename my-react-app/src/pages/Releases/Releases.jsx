@@ -26,7 +26,7 @@ function Releases(){
             <div className='releases'>
                 <div className='carousel-space'>
                     <Swiper
-                        slidesPerView={2}
+                        slidesPerView={1}
                         pagination={{clickable:true}}
                         navigation
                         className='swiper'
