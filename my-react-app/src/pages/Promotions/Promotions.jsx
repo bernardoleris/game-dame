@@ -5,6 +5,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import promotionImg from "../../assets/godofwar-img.png"
 import Button from '../../components/Button';
 import { FaShoppingCart } from "react-icons/fa";
+import SmallBox from '../../components/SmallBox';
 
 function Promotions(){
     return (
@@ -14,6 +15,27 @@ function Promotions(){
                 <div className='game-box'>
                     <div className='discount-circle'>98%</div>
                     <img src={promotionImg} alt="" />
+                    <div className='smallbox-position'>
+                        <SmallBox 
+                            width="65px" 
+                            height="25px" 
+                            fontColor="#FCFAFA" 
+                            fontSize="14px" 
+                            bgColor="
+                            #4B626C"
+                        >
+                            -40%
+                        </SmallBox>
+                        <SmallBox 
+                            width="100px" 
+                            height="25px" 
+                            fontColor="#4B626C" 
+                            fontSize="16px" 
+                            bgColor="#FCFAFA"
+                        >
+                            R$ 119,95
+                    </SmallBox>
+                    </div>
                 </div>
                 <div className='describe-box'>
                     <div className='promotions-title'>God Of War</div>
@@ -40,6 +62,7 @@ function Promotions(){
                         icon={<FaShoppingCart />}
                         marginTop = "-10px"
                         iconMarginTop="5px"
+                        iconMarginRight="-17px"
                     />
                 </div>
                 

@@ -31,6 +31,7 @@ const StyledIcon = styled.span`
     margin-top: ${props => props.iconMarginTop || '20px'};
     width: 20px;
     height: 20px;
+    margin-right: ${props => props.iconMarginRight || '0px'};
 `;
 
 function Button(props) {
@@ -47,7 +48,7 @@ function Button(props) {
             >
                 {props.text}
                 {props.icon ? (
-                    <StyledIcon iconMarginTop={props.iconMarginTop}>
+                    <StyledIcon iconMarginTop={props.iconMarginTop} iconMarginRight={props.iconMarginRight}>
                         {props.icon}
                     </StyledIcon>
                 ) : null}

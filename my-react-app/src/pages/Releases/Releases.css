@@ -1,0 +1,26 @@
+.releases{
+    background-color: #FBF6F0;
+    width: 100%;
+    height: calc(100vh - 101px);
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+}
+
+.carousel-space{
+    background-color: #FBF6F0;
+    width: 100%;
+    height: 75vh;
+}
+
+.releases-space{
+    height: 315px;
+    width: 100%;
+    background-color: #4B626C;
+}
+
+.release-text{
+    color:#FBF6F0;
+    font-size: 32px;
+}

@@ -10,6 +10,7 @@ import Admin from "./pages/Admin/Admin.jsx"
 import Promotions from "./pages/Promotions/Promotions.jsx";
 import { Routes, Route } from "react-router-dom";
 import { Provider } from 'jotai';
+import Releases from "./pages/Releases/Releases.jsx";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/underdevelopment' element={<UnderDevelopment />}></Route> 
         <Route path='/admin' element={<Admin />}></Route> 
         <Route path='/promotions' element={<Promotions />}></Route> 
+        <Route path='/releases' element={<Releases />}></Route> 
         <Route path="*" element={<NoMatch />}></Route> 
       </Routes>
     </Provider>
