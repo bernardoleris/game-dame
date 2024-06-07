@@ -21,8 +21,7 @@ function Promotions(){
                             height="25px" 
                             fontColor="#FCFAFA" 
                             fontSize="14px" 
-                            bgColor="
-                            #4B626C"
+                            bgColor="#4B626C"
                         >
                             -40%
                         </SmallBox>

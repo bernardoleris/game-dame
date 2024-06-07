@@ -11,9 +11,12 @@ const Box = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  position: ${props => props.position || 'relative'};
+  margin-top: ${props => props.marginTop || '0px'};
+  margin-left: ${props => props.marginLeft || '0px'};
 `;
 
-const SmallBox = ({ width, height, fontColor, fontSize, bgColor, children }) => {
+const SmallBox = ({ width, height, fontColor, fontSize, bgColor, position, children, marginTop, marginLeft }) => {
   return (
     <Box 
       width={width} 
@@ -21,6 +24,9 @@ const SmallBox = ({ width, height, fontColor, fontSize, bgColor, children }) => 
       fontColor={fontColor} 
       fontSize={fontSize} 
       bgColor={bgColor}
+      position={position}
+      marginTop={marginTop}
+      marginLeft={marginLeft}
     >
       {children}
     </Box>
