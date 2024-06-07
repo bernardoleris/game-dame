@@ -1,0 +1,67 @@
+.promotions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FBF6F0;
+    width: 100%;
+    height: calc(100vh - 101px);
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+}
+
+.game-box{
+    position: relative; /* Adiciona position relative */
+    background-color: azure;
+    width: 779px;
+    height: 448px;
+}
+
+.describe-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    background-color: 
+    #4B626C;
+    width: 400px;
+    height: 448px;
+    gap: 25px;
+}
+
+.promotions-title{
+    font-weight: 600;
+    font-size: 32px;
+    color: #FBF6F0;
+}
+
+.promotions-describe{
+    color: #FBF6F0;
+    font-size: 18px;
+    width: 329px;
+    height: auto;
+    text-align: center;
+}
+
+.promotion-line {
+    width: 333px; /* Define a largura da linha */
+    height: 1px; /* Define a altura da linha */
+    background-color: #FBF6F0; /* Define a cor da linha */
+}
+
+.discount-circle {
+    position: absolute;
+    top: -50px; /* Ajuste conforme necessário */
+    left: -50px; /* Ajuste conforme necessário */
+    width: 100px;
+    height: 100px;
+    background-color: #4B626C;
+    color: #FCFAFA;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+}

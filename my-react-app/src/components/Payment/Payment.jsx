@@ -20,7 +20,12 @@ function Payment(){
                         <Comcheckbox />
                         <div className="termo-texto">Eu aceito os termos e condições</div>
                     </div>
-                    <Button text="Finalizar Compra" icon={<FaShoppingCart />} variant='payment'/>
+                    <Button 
+                        text="Finalizar Compra" 
+                        icon={<FaShoppingCart />}
+                        fontSize = "20px"
+                        iconMarginTop="2px"
+                    />
                 </div>
             </div>
     )

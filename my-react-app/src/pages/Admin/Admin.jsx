@@ -57,6 +57,7 @@ function Admin(){
                             width="390px"
                             backgroundColor="#4B626C" // define a cor de fundo
                             placeholderColor="#FFFFFF"
+                            color = "#F3F3F3"
                         />
                         <Button 
                             text="Remover"

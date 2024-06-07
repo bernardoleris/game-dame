@@ -7,6 +7,7 @@ import NoMatch from "./pages/NoMatch.jsx"
 import ForgotPassword from './pages/ForgotPassword.jsx'
 import UnderDevelopment from "./pages/UnderDevelopment.jsx";
 import Admin from "./pages/Admin/Admin.jsx"
+import Promotions from "./pages/Promotions/Promotions.jsx";
 import { Routes, Route } from "react-router-dom";
 import { Provider } from 'jotai';
 
@@ -21,6 +22,7 @@ function App() {
         <Route path='/forgotpassword' element={<ForgotPassword />}></Route> 
         <Route path='/underdevelopment' element={<UnderDevelopment />}></Route> 
         <Route path='/admin' element={<Admin />}></Route> 
+        <Route path='/promotions' element={<Promotions />}></Route> 
         <Route path="*" element={<NoMatch />}></Route> 
       </Routes>
     </Provider>
