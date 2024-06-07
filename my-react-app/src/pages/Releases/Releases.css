@@ -9,6 +9,9 @@
 }
 
 .carousel-space{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #FBF6F0;
     width: 100%;
     height: 75vh;
@@ -66,3 +69,43 @@
 #shopping-cart:hover {
     transform: scale(1.1); /* Aumenta o tamanho do ícone em 10% */
 }
+
+.swiper-images{
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper{
+    width: 1200px;
+    height: 300px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    --swiper-navigation-size: 60px;
+    --swiper-navigation-top-offset: 50%;
+    --swiper-navigation-sides-offset: 10px;
+    --swiper-navigation-color: #97A4A2;
+}
+
+.swiper-pagination-bullet {
+    --swiper-pagination-color: #97A4A2;
+    --swiper-pagination-left: auto;
+    --swiper-pagination-right: 8px;
+    --swiper-pagination-bottom: 8px;
+    --swiper-pagination-top: auto;
+    --swiper-pagination-fraction-color: inherit;
+    --swiper-pagination-progressbar-bg-color: rgba(0, 0, 0, 0.25);
+    --swiper-pagination-progressbar-size: 4px;
+    --swiper-pagination-bullet-size: 8px;
+    --swiper-pagination-bullet-width: 20px;
+    --swiper-pagination-bullet-height: 20px;
+    --swiper-pagination-bullet-inactive-color: #000;
+    --swiper-pagination-bullet-inactive-opacity: 0.2;
+    --swiper-pagination-bullet-opacity: 1;
+    --swiper-pagination-bullet-horizontal-gap: 4px;
+    --swiper-pagination-bullet-vertical-gap: 6px;
+  }

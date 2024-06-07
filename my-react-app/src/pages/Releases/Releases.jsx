@@ -9,6 +9,15 @@ import img5 from "../../assets/img5.png"
 import SmallBox from '../../components/SmallBox';
 import { CiShoppingCart } from "react-icons/ci";
 import { Link } from "react-router-dom";
+import {register} from "swiper/element-bundle";
+import {Swiper, SwiperSlide} from 'swiper/react';
+
+register();
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 function Releases(){
     return (
@@ -16,7 +25,28 @@ function Releases(){
             <Navbar />
             <div className='releases'>
                 <div className='carousel-space'>
-
+                    <Swiper
+                        slidesPerView={2}
+                        pagination={{clickable:true}}
+                        navigation
+                        className='swiper'
+                    >
+                        <SwiperSlide>
+                            <img src={img1} alt="" className='swiper-images' />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={img2} alt="" className='swiper-images' />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={img3} alt="" className='swiper-images' />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={img4} alt="" className='swiper-images' />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={img5} alt="" className='swiper-images' />
+                        </SwiperSlide>
+                    </Swiper>
                 </div>
                 <div className='releases-space'>
                     <div className='release-text'>Lançamentos</div>
