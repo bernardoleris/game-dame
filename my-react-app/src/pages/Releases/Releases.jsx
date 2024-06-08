@@ -60,7 +60,7 @@ function Releases(){
                                 fontSize="12px" 
                                 bgColor="#FCFAFA"
                                 position="absolute"
-                                marginTop="170px"
+                                marginTop="175px"
                                 marginLeft="10px"
                             >
                                 R$ 299,00
@@ -75,7 +75,7 @@ function Releases(){
                                 fontSize="12px" 
                                 bgColor="#FCFAFA"
                                 position="absolute"
-                                marginTop="170px"
+                                marginTop="175px"
                                 marginLeft="10px"
                             >
                                 R$ 299,00
@@ -90,7 +90,7 @@ function Releases(){
                                 fontSize="12px" 
                                 bgColor="#FCFAFA"
                                 position="absolute"
-                                marginTop="170px"
+                                marginTop="175px"
                                 marginLeft="10px"
                             >
                                 R$ 299,00
@@ -105,7 +105,7 @@ function Releases(){
                                 fontSize="12px" 
                                 bgColor="#FCFAFA"
                                 position="absolute"
-                                marginTop="170px"
+                                marginTop="175px"
                                 marginLeft="10px"
                             >
                                 R$ 299,00
@@ -120,7 +120,7 @@ function Releases(){
                                 fontSize="12px" 
                                 bgColor="#FCFAFA"
                                 position="absolute"
-                                marginTop="170px"
+                                marginTop="175px"
                                 marginLeft="10px"
                             >
                                 R$ 299,00
