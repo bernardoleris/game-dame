@@ -12,30 +12,31 @@ const StyledInput = styled.input`
     background-color: ${props => props.backgroundColor || '#EFEFEF'};
     color: ${props => props.color || '#97A4A2'};
     font-weight: 300;
-    text-align: ${props => props.align || 'left'}; // Usando align ao invés de textAlign
+    text-align: ${props => props.align || 'left'};
 
     &::placeholder {
         color: ${props => props.placeholderColor || '#97A4A2'};
     }
 `;
 
-function Input(props) {
+function Input({ name, type, value, onChange, placeholder, width, height, textAlign, backgroundColor, color, placeholderColor }) {
     return (
         <StyleSheetManager shouldForwardProp={prop => isPropValid(prop)}>
             <StyledInput
-                type="text"
-                placeholder={props.placeholder}
-                width={props.width}
-                height={props.height}
-                align={props.textAlign} // Usando align ao invés de textAlign
-                backgroundColor={props.backgroundColor}
-                color={props.color}
-                placeholderColor={props.placeholderColor}
+                name={name}
+                type={type}
+                value={value}
+                onChange={onChange}
+                placeholder={placeholder}
+                width={width}
+                height={height}
+                align={textAlign}
+                backgroundColor={backgroundColor}
+                color={color}
+                placeholderColor={placeholderColor}
             />
         </StyleSheetManager>
     );
 }
 
 export default Input;
-
-
