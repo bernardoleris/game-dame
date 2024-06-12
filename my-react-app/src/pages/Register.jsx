@@ -7,25 +7,50 @@ import '../styles/AcessPages.css';
 import api from "../services/api";
 
 function Register() {
-    // Defina estados para armazenar os valores dos campos do formulário
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [cpf, setCpf] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
 
-    // Função para lidar com o envio do formulário
-    const handleSubmit = async (e) => {
-        e.preventDefault(); // Previne o comportamento padrão de recarregar a página
+    const validateEmail = (email) => {
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        return emailPattern.test(email);
+    };
 
-        // Verifica se as senhas coincidem
+    const validateCPF = (cpf) => {
+        const cpfPattern = /^\d{11}$/;
+        return cpfPattern.test(cpf);
+    };
+
+    const validatePassword = (password) => {
+        return password.length >= 6;
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        if (!validateEmail(email)) {
+            alert('Por favor, insira um email válido.');
+            return;
+        }
+
+        if (!validateCPF(cpf)) {
+            alert('Por favor, insira um CPF válido (11 dígitos).');
+            return;
+        }
+
+        if (!validatePassword(password)) {
+            alert('A senha deve ter no mínimo 6 caracteres.');
+            return;
+        }
+
         if (password !== confirmPassword) {
-            alert('As senhas não coincidem');
+            alert('As senhas não coincidem.');
             return;
         }
 
         try {
-            // Envia os dados do usuário para o servidor
             await api.post('/register', {
                 username,
                 email,
@@ -33,10 +58,8 @@ function Register() {
                 password
             });
 
-            // Exibe uma mensagem de sucesso
-            alert('Usuário registrado com sucesso!');
+            window.location.href = '/';
         } catch (error) {
-            // Exibe uma mensagem de erro caso ocorra algum problema
             console.error('Erro ao registrar o usuário:', error);
             alert('Erro ao registrar o usuário. Verifique o console para mais detalhes.');
         }
@@ -50,27 +73,47 @@ function Register() {
                         <div className='other-pages'>
                             <div className='input-pages'>
                                 <div className='form-texto'>Registrar</div>
-                                {/* Use os estados e funções de atualização para os valores dos campos */}
-                                <Input placeholder="Nome de usuário" value={username} onChange={(e) => setUsername(e.target.value)} />
-                                <Input placeholder="E-mail" value={email} onChange={(e) => setEmail(e.target.value)} />
-                                <Input placeholder="CPF" value={cpf} onChange={(e) => setCpf(e.target.value)} />
-                                <Input placeholder="Senha" type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-                                <Input placeholder="Confirmar Senha" type="password" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
+                                <Input 
+                                    placeholder="Nome de usuário" 
+                                    value={username} 
+                                    onChange={(e) => setUsername(e.target.value)} 
+                                />
+                                <Input 
+                                    placeholder="E-mail" 
+                                    value={email} 
+                                    onChange={(e) => setEmail(e.target.value)} 
+                                />
+                                <Input 
+                                    placeholder="CPF" 
+                                    value={cpf} 
+                                    onChange={(e) => setCpf(e.target.value)} 
+                                />
+                                <Input 
+                                    placeholder="Senha" 
+                                    type="password" 
+                                    value={password} 
+                                    onChange={(e) => setPassword(e.target.value)} 
+                                />
+                                <Input 
+                                    placeholder="Confirmar Senha" 
+                                    type="password" 
+                                    value={confirmPassword} 
+                                    onChange={(e) => setConfirmPassword(e.target.value)} 
+                                />
                             </div>
                             <div className='arrow-container'>
-                                <button type="submit"><FaArrowRightLong className='arrow' /></button> {/* Alterado para um botão de envio */}
+                                <button type="submit"><FaArrowRightLong className='arrow' /></button>
                             </div>
                         </div>
-                        <div className='acess-container'>
-                            <div><Link to='/' className='acess-texto'>Fazer Login</Link></div>
-                        </div>
                     </form>
+                    <div className='acess-container'>
+                        <div><Link to='/' className='acess-texto'>Fazer Login</Link></div>
+                    </div>
                 </div>
             </div>
             <img src={imagem} alt="" className='imagem' />
         </div>
-    )
+    );
 }
 
 export default Register;
-

@@ -13,6 +13,12 @@ function Login() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        if (!emailPattern.test(email)) {
+            alert('Por favor, insira um email válido.');
+            return;
+        }
+
         try {
             const response = await api.post('/login', {
                 email,
@@ -54,11 +60,11 @@ function Login() {
                                 </button>
                             </div>
                         </div>
-                        <div className='acess-container'>
-                            <div><Link to='/register' className='acess-texto'>Criar conta</Link></div>
-                            <div><Link to='/forgotpassword' className='acess-texto'>Esqueceu a Senha</Link></div>
-                        </div>
                     </form>
+                    <div className='acess-container'>
+                        <div><Link to='/register' className='acess-texto'>Criar conta</Link></div>
+                        <div><Link to='/forgotpassword' className='acess-texto'>Esqueceu a Senha</Link></div>
+                    </div>
                 </div>
             </div>
             <img src={imagem} alt="" className='imagem'/>
