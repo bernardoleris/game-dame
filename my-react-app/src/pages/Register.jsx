@@ -102,7 +102,7 @@ function Register() {
                                 />
                             </div>
                             <div className='arrow-container'>
-                                <button type="submit"><FaArrowRightLong className='arrow' /></button>
+                                <button type="submit" className='arrow-button'><FaArrowRightLong className='arrow' /></button>
                             </div>
                         </div>
                     </form>

@@ -55,7 +55,7 @@ function Login() {
                                 />
                             </div>
                             <div className='arrow-container'>
-                                <button type="submit">
+                                <button type="submit" className='arrow-button'>
                                     <FaArrowRightLong className='arrow'/>
                                 </button>
                             </div>

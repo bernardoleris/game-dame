@@ -1,13 +1,13 @@
 import React from 'react';
 import '../../styles/Index.css'
-import './Promotions.css'
+import './Sale.css'
 import Navbar from '../../components/Navbar/Navbar';
 import promotionImg from "../../assets/godofwar-img.png"
 import Button from '../../components/Button';
 import { FaShoppingCart } from "react-icons/fa";
 import SmallBox from '../../components/SmallBox';
 
-function Promotions(){
+function Sale(){
     return (
         <div>
             <Navbar />
@@ -70,4 +70,4 @@ function Promotions(){
     )
 }
 
-export default Promotions;
+export default Sale;

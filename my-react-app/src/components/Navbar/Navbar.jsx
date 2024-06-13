@@ -16,7 +16,7 @@ function Navbar(){
                 <div className="barra-vertical"></div>
                 <NavLink to="/underdevelopment" className={({isActive}) => (isActive ? "navbar-texto active-style" : 'navbar-texto')}>Gêneros</NavLink>
                 <div className="barra-vertical"></div>
-                <NavLink to="/promotions" className={({isActive}) => (isActive ? "navbar-texto active-style" : 'navbar-texto')}>Promoções</NavLink>
+                <NavLink to="/sales" className={({isActive}) => (isActive ? "navbar-texto active-style" : 'navbar-texto')}>Promoções</NavLink>
                 <div className="barra-vertical"></div>
                 <NavLink to="/info" className= {({isActive}) => (isActive ? "navbar-texto active-style" : 'navbar-texto')}>Conta</NavLink>
             </div>

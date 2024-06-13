@@ -48,6 +48,7 @@
     font-size: 35px;
     color: #4B626C;
     transition: font-size 0.2s ease-in-out;
+    
 }
 
 .arrow:hover {
@@ -86,4 +87,9 @@
     flex-direction: column;
     justify-content: center;
     gap: 20px;
+}
+
+.arrow-button{
+    border: 0px;
+    background-color: #FBF8F4;
 }

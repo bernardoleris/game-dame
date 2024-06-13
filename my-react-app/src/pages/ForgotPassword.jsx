@@ -16,7 +16,7 @@ function Login(){
                             <Input placeholder="E-mail" />
                         </div>
                         <div className='arrow-container'>
-                            <Link to='/info'><FaArrowRightLong className='arrow'/></Link>
+                            <Link to='/'><FaArrowRightLong className='arrow'/></Link>
                         </div>
                     </div>
                 <div className='acess-container'>
