@@ -8,7 +8,9 @@ import { NavLink } from 'react-router-dom';
 function Navbar(){
     return (
         <div className="header">
-            <img src={avatarImage} alt="Avatar" className="navbar-avatar"/>
+            <NavLink to="/info" className="navbar-avatar-link">
+                <img src={avatarImage} alt="Avatar" className="navbar-avatar"/>
+            </NavLink>
             <div className="bar">
                 <NavLink to="/releases" className={({isActive}) => (isActive ? "navbar-texto active-style" : 'navbar-texto')}>Lançamentos</NavLink>
                 <div className="barra-vertical"></div>
@@ -18,7 +20,7 @@ function Navbar(){
                 <div className="barra-vertical"></div>
                 <NavLink to="/sales" className={({isActive}) => (isActive ? "navbar-texto active-style" : 'navbar-texto')}>Promoções</NavLink>
                 <div className="barra-vertical"></div>
-                <NavLink to="/info" className= {({isActive}) => (isActive ? "navbar-texto active-style" : 'navbar-texto')}>Conta</NavLink>
+                <NavLink to="/info" className={({isActive}) => (isActive ? "navbar-texto active-style" : 'navbar-texto')}>Conta</NavLink>
             </div>
             <Searchbar />
         </div>

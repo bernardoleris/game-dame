@@ -12,6 +12,7 @@ function Register() {
     const [cpf, setCpf] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
+    const [errorMessage, setErrorMessage] = useState('');
 
     const validateEmail = (email) => {
         const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
@@ -29,24 +30,25 @@ function Register() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setErrorMessage('');
 
         if (!validateEmail(email)) {
-            alert('Por favor, insira um email válido.');
+            setErrorMessage('Por favor, insira um email válido.');
             return;
         }
 
         if (!validateCPF(cpf)) {
-            alert('Por favor, insira um CPF válido (11 dígitos).');
+            setErrorMessage('Por favor, insira um CPF válido (11 dígitos).');
             return;
         }
 
         if (!validatePassword(password)) {
-            alert('A senha deve ter no mínimo 6 caracteres.');
+            setErrorMessage('A senha deve ter no mínimo 6 caracteres.');
             return;
         }
 
         if (password !== confirmPassword) {
-            alert('As senhas não coincidem.');
+            setErrorMessage('As senhas não coincidem.');
             return;
         }
 
@@ -61,7 +63,7 @@ function Register() {
             window.location.href = '/';
         } catch (error) {
             console.error('Erro ao registrar o usuário:', error);
-            alert('Erro ao registrar o usuário. Verifique o console para mais detalhes.');
+            setErrorMessage('Erro ao registrar o usuário. Verifique o console para mais detalhes.');
         }
     };
 
@@ -102,6 +104,7 @@ function Register() {
                                 />
                             </div>
                             <div className='arrow-container'>
+                                {errorMessage && <div className='error-message'>{errorMessage}</div>}
                                 <button type="submit" className='arrow-button'><FaArrowRightLong className='arrow' /></button>
                             </div>
                         </div>

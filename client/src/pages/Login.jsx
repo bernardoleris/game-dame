@@ -9,13 +9,14 @@ import api from "../services/api";
 function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [errorMessage, setErrorMessage] = useState('');
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         
         const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
         if (!emailPattern.test(email)) {
-            alert('Por favor, insira um email válido.');
+            setErrorMessage('Por favor, insira um email válido.');
             return;
         }
 
@@ -30,7 +31,7 @@ function Login() {
             }
         } catch (error) {
             console.error('Erro ao fazer login:', error);
-            alert('Erro ao fazer login. Verifique o console para mais detalhes.');
+            setErrorMessage('Erro ao fazer login. Verifique o console para mais detalhes.');
         }
     };
 
@@ -55,6 +56,7 @@ function Login() {
                                 />
                             </div>
                             <div className='arrow-container'>
+                                {errorMessage && <div className='error-message'>{errorMessage}</div>}
                                 <button type="submit" className='arrow-button'>
                                     <FaArrowRightLong className='arrow'/>
                                 </button>
