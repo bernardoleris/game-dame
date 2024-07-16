@@ -31,7 +31,11 @@ function Login() {
             }
         } catch (error) {
             console.error('Erro ao fazer login:', error);
-            setErrorMessage('Erro ao fazer login. Verifique o console para mais detalhes.');
+            if (error.response && error.response.data && error.response.data.msg) {
+                setErrorMessage(error.response.data.msg);
+            } else {
+                setErrorMessage('Erro ao fazer login. Verifique o console para mais detalhes.');
+            }
         }
     };
 
@@ -75,4 +79,3 @@ function Login() {
 }
 
 export default Login;
-

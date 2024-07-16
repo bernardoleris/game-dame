@@ -9,11 +9,11 @@ This is a full-stack project for a game purchasing website called Game Dame. It 
 Este é um projeto de full-stack para um site de compras de jogos chamado Game Dame. Ele possui páginas de registro, login, recuperação de senha, carrinho de compras, lançamentos, jogos populares e informações da conta. O projeto foi desenvolvido utilizando React.js, Express.js, MUI, HTML, CSS, Jotai, Styled Components and MongoDB.
 
 ## Images:
-![login](./my-react-app/src/assets/login.png)
-![register](./my-react-app/src/assets/register.png)
-![forgot](./my-react-app/src/assets/forgot.png)
-![info](./my-react-app/src/assets/info.png)
-![admin](./my-react-app/src/assets/admin.png)
-![releases](./my-react-app/src/assets/releases.png)
-![sale](./my-react-app/src/assets/sale.png)
-![notfound](./my-react-app/src/assets/notfound.png)
+![login](./client/src/assets/login.png)
+![register](./client/src/assets/register.png)
+![forgot](./client/src/assets/forgot.png)
+![info](./client/src/assets/info.png)
+![admin](./client/src/assets/admin.png)
+![releases](./client/src/assets/releases.png)
+![sale](./client/src/assets/sale.png)
+![notfound](./client/src/assets/notfound.png)

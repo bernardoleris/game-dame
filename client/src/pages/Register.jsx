@@ -28,9 +28,18 @@ function Register() {
         return password.length >= 6;
     };
 
+    const validateUsername = (username) => {
+        return username.trim() !== '';
+    };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         setErrorMessage('');
+
+        if (!validateUsername(username)) {
+            setErrorMessage('Por favor, insira um nome de usuário.');
+            return;
+        }
 
         if (!validateEmail(email)) {
             setErrorMessage('Por favor, insira um email válido.');

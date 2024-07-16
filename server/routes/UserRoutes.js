@@ -58,12 +58,12 @@ router.post('/login', [
     try {
         const user = await User.findOne({ email });
         if (!user) {
-            return res.status(400).json({ msg: 'Credenciais inválidas' });
+            return res.status(400).json({ msg: 'Credenciais inválidas.' });
         }
 
         const isMatch = await bcrypt.compare(password, user.password);
         if (!isMatch) {
-            return res.status(400).json({ msg: 'Credenciais inválidas' });
+            return res.status(400).json({ msg: 'Credenciais inválidas.' });
         }
 
         const payload = {
@@ -93,4 +93,3 @@ router.get('/users', async (req, res) => {
 });
 
 export default router;
-
